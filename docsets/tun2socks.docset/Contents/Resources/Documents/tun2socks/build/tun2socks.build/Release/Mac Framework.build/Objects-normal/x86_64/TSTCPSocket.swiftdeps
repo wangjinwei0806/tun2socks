@@ -20,55 +20,55 @@ provides-member:
 - ["C9tun2socks11TSTCPSocket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "tcp_sent_func"
-- "Int"
-- "SocketIdentity"
-- "SocketDict"
 - "TSTCPSocketDelegate"
-- !private "tcp_arg"
-- !private "tcp_close"
-- !private "tcp_recved"
-- !private "TCP_WRITE_FLAG_COPY"
-- !private "BooleanLiteralType"
-- !private "Int32"
-- "TSTCPSocket"
-- "Hashable"
 - !private "ERR_OK"
-- !private "<"
-- !private "tcp_recv"
-- "in_addr"
-- !private "tcp_write"
-- !private "ERR_ABRT"
-- !private "CLOSED"
-- !private "dispatch_async"
-- "dispatch_queue_t"
-- "err_t"
-- "tcp_err_func"
-- "Dictionary"
-- !private "tcp_sent"
-- !private "ESTABLISHED"
-- !private "pbuf_free"
-- !private ">="
-- "=="
-- !private "~="
-- !private "ERR_RST"
-- "UInt16"
-- "tcp_recv_func"
-- "UnsafeMutablePointer"
-- "Void"
-- "Bool"
-- !private "dispatch_sync"
+- !private "tcp_close"
+- !private "tcp_arg"
+- "NSData"
+- !private "tcp_recved"
 - !private "&&"
+- !private "!="
+- "in_addr"
+- "Int"
+- !private ">="
+- !private "ESTABLISHED"
+- "SocketDict"
+- "Bool"
+- !private "pbuf_free"
+- "SocketIdentity"
+- !private "BooleanLiteralType"
+- "TSTCPSocket"
+- "UInt16"
+- "tcp_sent_func"
+- "Dictionary"
+- !private "tcp_err"
+- "Hashable"
+- !private "pbuf_copy_partial"
+- !private "withUnsafeMutablePointer"
+- !private "tcp_write"
 - !private "UInt8"
+- "Void"
+- !private "tcp_sent"
+- "tcp_pcb"
 - !private "tcp_abort"
 - "pbuf"
-- "NSData"
-- !private "withUnsafeMutablePointer"
+- !private "tcp_recv"
+- !private "dispatch_async"
+- "dispatch_queue_t"
+- !private "ERR_RST"
+- "=="
+- "tcp_recv_func"
+- !private "~="
+- "UnsafeMutablePointer"
+- !private "Int32"
+- !private "dispatch_sync"
+- !private "TCP_WRITE_FLAG_COPY"
+- !private "<"
+- "err_t"
+- "tcp_err_func"
 - !private "NSMutableData"
-- !private "!="
-- !private "pbuf_copy_partial"
-- !private "tcp_err"
-- "tcp_pcb"
+- !private "ERR_ABRT"
+- !private "CLOSED"
 depends-member:
 - !private ["Ps9AnyObject", "CLOSED"]
 - !private ["Ps9AnyObject", "ERR_ABRT"]
@@ -325,7 +325,6 @@ depends-member:
 - ["C9tun2socks11TSTCPSocket", "UnsafeMutablePointer"]
 - !private ["C9tun2socks11TSTCPSocket", "Void"]
 - ["C9tun2socks11TSTCPSocket", "close"]
-- ["C9tun2socks11TSTCPSocket", "connected"]
 - ["C9tun2socks11TSTCPSocket", "deinit"]
 - ["C9tun2socks11TSTCPSocket", "delegate"]
 - ["C9tun2socks11TSTCPSocket", "destinationAddress"]
@@ -338,6 +337,7 @@ depends-member:
 - !private ["C9tun2socks11TSTCPSocket", "identity"]
 - ["C9tun2socks11TSTCPSocket", "in_addr"]
 - ["C9tun2socks11TSTCPSocket", "init"]
+- ["C9tun2socks11TSTCPSocket", "isConnected"]
 - ["C9tun2socks11TSTCPSocket", "isValid"]
 - ["C9tun2socks11TSTCPSocket", "pbuf"]
 - !private ["C9tun2socks11TSTCPSocket", "pbuf_copy_partial"]
@@ -515,4 +515,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "56c5ea4f21cfa25962d7bacce73fc7ac"
+interface-hash: "afab89bbd5bf6c3cdbd46333891f7004"
