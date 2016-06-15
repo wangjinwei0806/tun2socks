@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "f01343009061f50b6d259cae7519e2eb"
-build_time: [519314033, 714858000]
+build_time: [519315663, 267897000]
 inputs:
-  "/Users/travis/build/zhuhaow/tun2socks/tun2socks/src/wrapper/TSTCPSocket.swift": [519314029, 0]
-  "/Users/travis/build/zhuhaow/tun2socks/tun2socks/src/wrapper/TSIPStack.swift": [519314029, 0]
+  "/Users/travis/build/zhuhaow/tun2socks/tun2socks/src/wrapper/TSTCPSocket.swift": [519315640, 0]
+  "/Users/travis/build/zhuhaow/tun2socks/tun2socks/src/wrapper/TSIPStack.swift": [519315640, 0]

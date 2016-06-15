@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">tun2socks Docs</a> (64% documented)</p>
+        <p><a href="index.html">tun2socks Docs</a> (96% documented)</p>
         <p class="header-right"><a href="https://github.com/zhuhaow/tun2socks"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,7 +74,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unless one of <code>socketDidReset</code>, <code>socketDidAbort</code> or <code>socketDidClose</code> is called, please do <code>close()</code>the socket actively and wait for <code>socketDidClose</code> before releasing it.</p>
+                        <p>The TCP socket class.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Unless one of <code>socketDidReset</code>, <code>socketDidAbort</code> or <code>socketDidClose</code> delegation methods is called, please do <code>close()</code>the socket actively and wait for <code>socketDidClose</code> before releasing it.
+
+</div>
 
                         <a href="Classes/TSTCPSocket.html" class="slightly-smaller">See more</a>
                       </div>
@@ -82,7 +88,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
 
                         </div>
                       </div>
@@ -125,7 +131,7 @@ Then call <code>receivedPacket(_:)</code> when a new IP packet is read from the 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSIPStack</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TSIPStack</span></code></pre>
 
                         </div>
                       </div>

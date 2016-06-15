@@ -10,64 +10,65 @@ provides-top-level:
 - "TSTCPSocket"
 provides-nominal:
 - "P9tun2socks19TSTCPSocketDelegate"
-- "C9tun2socks10SocketDict"
+- "V9tun2socks10SocketDict"
 - "V9tun2socks14SocketIdentity"
 - "C9tun2socks11TSTCPSocket"
 provides-member:
 - ["P9tun2socks19TSTCPSocketDelegate", ""]
-- ["C9tun2socks10SocketDict", ""]
+- ["V9tun2socks10SocketDict", ""]
 - ["V9tun2socks14SocketIdentity", ""]
 - ["C9tun2socks11TSTCPSocket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSMutableData"
-- !private "tcp_err"
-- "tcp_recv_func"
-- "SocketDict"
-- !private "tcp_sent"
-- "SocketIdentity"
-- !private "TCP_WRITE_FLAG_COPY"
-- "tcp_err_func"
-- !private "tcp_close"
-- "tcp_pcb"
-- !private "CLOSED"
-- !private "<"
-- "UnsafeMutablePointer"
-- !private "ERR_ABRT"
-- "Void"
-- !private "ERR_RST"
-- !private "BooleanLiteralType"
-- !private "tcp_recv"
-- !private "UInt8"
-- !private "!="
-- "UInt16"
-- !private "tcp_abort"
-- "err_t"
-- !private "tcp_recved"
-- "pbuf"
-- !private "Int32"
+- "Bool"
+- !private ">="
 - !private "ESTABLISHED"
 - !private "pbuf_free"
-- !private "dispatch_async"
-- "dispatch_queue_t"
-- !private ">="
-- "Int"
+- "TSTCPSocket"
+- !private "&&"
+- !private "tcp_recved"
+- "SocketIdentity"
+- !private "ERR_RST"
+- "tcp_sent_func"
+- "UInt16"
+- !private "Int32"
+- "SocketDict"
+- !private "UInt8"
+- !private "NSMutableData"
+- "UnsafeMutablePointer"
+- "tcp_recv_func"
+- !private "tcp_recv"
+- !private "BooleanLiteralType"
+- !private "tcp_write"
+- "Dictionary"
+- !private "tcp_close"
+- "tcp_pcb"
+- "pbuf"
+- !private "tcp_abort"
+- !private "tcp_sent"
+- !private "!="
+- "NSData"
+- "Hashable"
+- "Void"
+- "in_addr"
+- !private "TCP_WRITE_FLAG_COPY"
+- "err_t"
+- !private "tcp_err"
 - !private "dispatch_sync"
-- "TSTCPSocketDelegate"
+- !private "withUnsafeMutablePointer"
+- !private "pbuf_copy_partial"
+- !private "ERR_ABRT"
 - "=="
 - !private "~="
-- !private "tcp_arg"
-- "tcp_sent_func"
-- "in_addr"
-- !private "tcp_write"
-- "NSData"
-- !private "&&"
-- !private "pbuf_copy_partial"
+- "tcp_err_func"
+- !private "CLOSED"
 - !private "ERR_OK"
-- "Bool"
-- !private "withUnsafeMutablePointer"
-- "Hashable"
-- "TSTCPSocket"
+- "TSTCPSocketDelegate"
+- "dispatch_queue_t"
+- !private "dispatch_async"
+- !private "<"
+- !private "tcp_arg"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "CLOSED"]
 - !private ["Ps9AnyObject", "ERR_ABRT"]
@@ -78,9 +79,8 @@ depends-member:
 - !private ["Ps9AnyObject", "Int32"]
 - !private ["Ps9AnyObject", "NSMutableData"]
 - !private ["Ps9AnyObject", "SocketDict"]
-- ["Ps9AnyObject", "SocketIdentity"]
+- !private ["Ps9AnyObject", "SocketIdentity"]
 - !private ["Ps9AnyObject", "TCP_WRITE_FLAG_COPY"]
-- ["Ps9AnyObject", "TSTCPSocket"]
 - !private ["Ps9AnyObject", "UInt16"]
 - !private ["Ps9AnyObject", "UInt8"]
 - !private ["Ps9AnyObject", "UnsafeMutablePointer"]
@@ -97,7 +97,6 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isValid"]
 - !private ["Ps9AnyObject", "length"]
-- !private ["Ps9AnyObject", "lookup"]
 - !private ["Ps9AnyObject", "mutableBytes"]
 - !private ["Ps9AnyObject", "pbuf_copy_partial"]
 - !private ["Ps9AnyObject", "pbuf_free"]
@@ -106,7 +105,6 @@ depends-member:
 - !private ["Ps9AnyObject", "recved"]
 - !private ["Ps9AnyObject", "release"]
 - !private ["Ps9AnyObject", "sent"]
-- !private ["Ps9AnyObject", "socketDict"]
 - !private ["Ps9AnyObject", "sourceAddress"]
 - !private ["Ps9AnyObject", "sourcePort"]
 - !private ["Ps9AnyObject", "tcp_arg"]
@@ -141,9 +139,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "mutableBytes"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
-- ["Ps14CollectionType", "init"]
 - !private ["Ps14CollectionType", "removeValueForKey"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
@@ -151,28 +150,34 @@ depends-member:
 - !private ["Ps10Comparable", "hashValue"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "memory"]
+- ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
+- ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "bytes"]
 - !private ["Ps28CustomDebugStringConvertible", "hashValue"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "length"]
 - !private ["Ps28CustomDebugStringConvertible", "memory"]
 - !private ["Ps28CustomDebugStringConvertible", "mutableBytes"]
 - !private ["Ps28CustomDebugStringConvertible", "removeValueForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- ["Ps23CustomStringConvertible", "Key"]
+- ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "bytes"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "length"]
 - !private ["Ps23CustomStringConvertible", "mutableBytes"]
 - !private ["Ps23CustomStringConvertible", "removeValueForKey"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- ["Vs10Dictionary", "init"]
+- ["Vs10Dictionary", "Key"]
+- ["Vs10Dictionary", "Value"]
 - !private ["Vs10Dictionary", "removeValueForKey"]
 - !private ["Vs10Dictionary", "subscript"]
-- ["Ps28DictionaryLiteralConvertible", "init"]
+- ["Ps28DictionaryLiteralConvertible", "Key"]
+- ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "removeValueForKey"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -206,9 +211,10 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
-- ["Ps9Indexable", "init"]
 - !private ["Ps9Indexable", "removeValueForKey"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
@@ -271,9 +277,10 @@ depends-member:
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- ["Ps12SequenceType", "Value"]
 - !private ["Ps12SequenceType", "_Element"]
-- ["Ps12SequenceType", "init"]
 - !private ["Ps12SequenceType", "removeValueForKey"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
@@ -284,12 +291,11 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
-- ["C9tun2socks10SocketDict", "SocketIdentity"]
-- ["C9tun2socks10SocketDict", "TSTCPSocket"]
-- ["C9tun2socks10SocketDict", "deinit"]
-- ["C9tun2socks10SocketDict", "init"]
-- ["C9tun2socks10SocketDict", "lookup"]
-- ["C9tun2socks10SocketDict", "socketDict"]
+- ["V9tun2socks10SocketDict", "SocketIdentity"]
+- ["V9tun2socks10SocketDict", "TSTCPSocket"]
+- ["V9tun2socks10SocketDict", "init"]
+- ["V9tun2socks10SocketDict", "lookup"]
+- ["V9tun2socks10SocketDict", "socketDict"]
 - ["V9tun2socks14SocketIdentity", "Int"]
 - ["V9tun2socks14SocketIdentity", "deinit"]
 - ["V9tun2socks14SocketIdentity", "hashValue"]
@@ -387,8 +393,10 @@ depends-member:
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps12_IntegerType", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- ["Ps21_ObjectiveCBridgeable", "Key"]
+- ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "removeValueForKey"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps12_PointerType", "Stride"]
@@ -401,11 +409,13 @@ depends-member:
 - !private ["Ps22_RandomAccessAmbiguity", "init"]
 - !private ["Ps22_RandomAccessAmbiguity", "memory"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Key"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "Stride"]
+- ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "hashValue"]
-- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "memory"]
 - !private ["Ps12_Reflectable", "removeValueForKey"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -464,7 +474,7 @@ depends-nominal:
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
-- "C9tun2socks10SocketDict"
+- "V9tun2socks10SocketDict"
 - "V9tun2socks14SocketIdentity"
 - !private "Ps10Strideable"
 - "C9tun2socks11TSTCPSocket"
@@ -505,4 +515,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "8cc71545547a19be94d407551aaa6ef1"
+interface-hash: "56c5ea4f21cfa25962d7bacce73fc7ac"

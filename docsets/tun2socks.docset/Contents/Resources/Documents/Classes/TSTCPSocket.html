@@ -14,7 +14,7 @@
     <a title="TSTCPSocket Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">tun2socks Docs</a> (64% documented)</p>
+        <p><a href="../index.html">tun2socks Docs</a> (96% documented)</p>
         <p class="header-right"><a href="https://github.com/zhuhaow/tun2socks"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -58,11 +58,17 @@
             <h1>TSTCPSocket</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
 
                 </div>
               </div>
-            <p>Unless one of <code>socketDidReset</code>, <code>socketDidAbort</code> or <code>socketDidClose</code> is called, please do <code>close()</code>the socket actively and wait for <code>socketDidClose</code> before releasing it.</p>
+            <p>The TCP socket class.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Unless one of <code>socketDidReset</code>, <code>socketDidAbort</code> or <code>socketDidClose</code> delegation methods is called, please do <code>close()</code>the socket actively and wait for <code>socketDidClose</code> before releasing it.
+
+</div>
 
           </section>
           <section class="section task-group-section">
@@ -81,14 +87,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The source IPv4 address.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sourceAddress</span><span class="p">:</span> <span class="n">in_addr</span></code></pre>
 
                         </div>
                       </div>
@@ -108,14 +114,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The destination IPv4 address</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">destinationAddress</span><span class="p">:</span> <span class="n">in_addr</span></code></pre>
 
                         </div>
                       </div>
@@ -135,14 +141,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The source port.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sourcePort</span><span class="p">:</span> <span class="kt">UInt16</span></code></pre>
 
                         </div>
                       </div>
@@ -162,14 +168,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The destination port.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">destinationPort</span><span class="p">:</span> <span class="kt">UInt16</span></code></pre>
 
                         </div>
                       </div>
@@ -189,14 +195,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Whether the socket is connected (we can receive and send data).</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connected</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -223,7 +229,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
 
                         </div>
                       </div>
@@ -243,7 +249,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Send data to the source.</p>
+                        <p>Send data to local rx side.</p>
 
                       </div>
                       <div class="declaration">
@@ -295,14 +301,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Close the socket. The socket should be released immediately and should not be read or write again.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSTCPSocket</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">close</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
