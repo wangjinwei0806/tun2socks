@@ -1,0 +1,378 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TSIPStackDelegate"
+- "tcpAcceptFn"
+- "outputPCB"
+- "TSIPStack"
+provides-nominal:
+- "P9tun2socks17TSIPStackDelegate"
+- "C9tun2socks9TSIPStack"
+provides-member:
+- ["P9tun2socks17TSIPStackDelegate", ""]
+- ["C9tun2socks9TSIPStack", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "TSTCPSocket"
+- "StringLiteralType"
+- "ip_addr_t"
+- !private "tcp_listen_with_backlog"
+- "outputPCB"
+- "netif"
+- !private "sys_check_timeouts"
+- !private "UInt16"
+- "NSData"
+- !private "Int"
+- !private "/"
+- "tcpAcceptFn"
+- "NSNumber"
+- !private "NSEC_PER_SEC"
+- !private "DISPATCH_TIME_NOW"
+- !private "FloatLiteralType"
+- !private "dispatch_suspend"
+- !private "tcp_bind"
+- !private "netif_list"
+- !private "dispatch_source_set_timer"
+- !private "pbuf_copy_partial"
+- !private "tcp_accepted_c"
+- !private "ip_addr_any"
+- "tcp_pcb"
+- "Void"
+- "UnsafeMutablePointer"
+- !private "pbuf_alloc"
+- !private "dispatch_async"
+- !private "tcp_new"
+- !private "AF_INET"
+- !private "UInt8"
+- "pbuf"
+- !private "dispatch_resume"
+- "dispatch_source_t"
+- !private "tcp_accept"
+- !private "PBUF_RAW"
+- "TSIPStackDelegate"
+- "err_t"
+- "TSIPStack"
+- !private "IntegerLiteralType"
+- !private "DISPATCH_SOURCE_TYPE_TIMER"
+- !private "dispatch_source_create"
+- !private "PBUF_RAM"
+- !private "ERR_OK"
+- !private "sys_restart_timeouts"
+- "DISPATCH_QUEUE_SERIAL"
+- !private "TCP_DEFAULT_LISTEN_BACKLOG"
+- !private "NSMutableData"
+- !private "lwip_init"
+- !private "Array"
+- !private "dispatch_source_set_event_handler"
+- "dispatch_queue_create"
+depends-member:
+- !private ["Ps9AnyObject", "AF_INET"]
+- ["Ps9AnyObject", "DISPATCH_QUEUE_SERIAL"]
+- !private ["Ps9AnyObject", "DISPATCH_SOURCE_TYPE_TIMER"]
+- !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
+- !private ["Ps9AnyObject", "ERR_OK"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "NSEC_PER_SEC"]
+- !private ["Ps9AnyObject", "NSMutableData"]
+- !private ["Ps9AnyObject", "PBUF_RAM"]
+- !private ["Ps9AnyObject", "PBUF_RAW"]
+- !private ["Ps9AnyObject", "TCP_DEFAULT_LISTEN_BACKLOG"]
+- ["Ps9AnyObject", "TSIPStack"]
+- !private ["Ps9AnyObject", "TSTCPSocket"]
+- !private ["Ps9AnyObject", "UInt16"]
+- !private ["Ps9AnyObject", "UInt8"]
+- !private ["Ps9AnyObject", "checkTimeout"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "didAcceptTCPSocket"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_call"]
+- ["Ps9AnyObject", "dispatch_queue_create"]
+- !private ["Ps9AnyObject", "dispatch_resume"]
+- !private ["Ps9AnyObject", "dispatch_source_create"]
+- !private ["Ps9AnyObject", "dispatch_source_set_event_handler"]
+- !private ["Ps9AnyObject", "dispatch_source_set_timer"]
+- !private ["Ps9AnyObject", "dispatch_suspend"]
+- !private ["Ps9AnyObject", "err_t"]
+- !private ["Ps9AnyObject", "getBytes"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "interface"]
+- !private ["Ps9AnyObject", "ip_addr_any"]
+- !private ["Ps9AnyObject", "length"]
+- !private ["Ps9AnyObject", "listenPCB"]
+- !private ["Ps9AnyObject", "lwip_init"]
+- !private ["Ps9AnyObject", "mutableBytes"]
+- !private ["Ps9AnyObject", "netif_list"]
+- !private ["Ps9AnyObject", "outputBlock"]
+- !private ["Ps9AnyObject", "outputPCB"]
+- !private ["Ps9AnyObject", "pbuf_alloc"]
+- !private ["Ps9AnyObject", "pbuf_copy_partial"]
+- !private ["Ps9AnyObject", "processQueue"]
+- !private ["Ps9AnyObject", "stack"]
+- !private ["Ps9AnyObject", "sys_check_timeouts"]
+- !private ["Ps9AnyObject", "sys_restart_timeouts"]
+- !private ["Ps9AnyObject", "tcpAcceptFn"]
+- !private ["Ps9AnyObject", "tcp_accept"]
+- !private ["Ps9AnyObject", "tcp_accepted_c"]
+- !private ["Ps9AnyObject", "tcp_bind"]
+- !private ["Ps9AnyObject", "tcp_listen_with_backlog"]
+- !private ["Ps9AnyObject", "tcp_new"]
+- !private ["Ps9AnyObject", "timer"]
+- !private ["Ps9AnyObject", "writePBuf"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps22BidirectionalIndexType", "init"]
+- !private ["Ps22BidirectionalIndexType", "memory"]
+- !private ["Ps21BitwiseOperationsType", "init"]
+- !private ["Ps11CVarArgType", "getBytes"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "length"]
+- !private ["Ps11CVarArgType", "memory"]
+- !private ["Ps11CVarArgType", "mutableBytes"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "memory"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "getBytes"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "length"]
+- !private ["Ps28CustomDebugStringConvertible", "memory"]
+- !private ["Ps28CustomDebugStringConvertible", "mutableBytes"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "getBytes"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "length"]
+- !private ["Ps23CustomStringConvertible", "mutableBytes"]
+- !private ["Ps9Equatable", "getBytes"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "length"]
+- !private ["Ps9Equatable", "memory"]
+- !private ["Ps9Equatable", "mutableBytes"]
+- !private ["Ps16ForwardIndexType", "init"]
+- !private ["Ps16ForwardIndexType", "memory"]
+- !private ["Ps8Hashable", "getBytes"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "length"]
+- !private ["Ps8Hashable", "memory"]
+- !private ["Ps8Hashable", "mutableBytes"]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Si", "init"]
+- !private ["Vs4Int8", "init"]
+- !private ["Ps21IntegerArithmeticType", "init"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "init"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "getBytes"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "length"]
+- !private ["PSo8NSCoding", "mutableBytes"]
+- !private ["PSo9NSCopying", "getBytes"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "length"]
+- !private ["PSo9NSCopying", "mutableBytes"]
+- !private ["CSo6NSData", "getBytes"]
+- !private ["CSo6NSData", "init"]
+- !private ["CSo6NSData", "length"]
+- !private ["CSo6NSData", "mutableBytes"]
+- !private ["PSo16NSMutableCopying", "getBytes"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "length"]
+- !private ["PSo16NSMutableCopying", "mutableBytes"]
+- !private ["CSo13NSMutableData", "init"]
+- !private ["CSo13NSMutableData", "mutableBytes"]
+- !private ["CSo8NSObject", "getBytes"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "length"]
+- !private ["CSo8NSObject", "mutableBytes"]
+- !private ["PSo16NSObjectProtocol", "getBytes"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "length"]
+- !private ["PSo16NSObjectProtocol", "mutableBytes"]
+- !private ["PSo14NSSecureCoding", "getBytes"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "length"]
+- !private ["PSo14NSSecureCoding", "mutableBytes"]
+- !private ["Ps21NilLiteralConvertible", "memory"]
+- !private ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "init"]
+- !private ["Ps21RandomAccessIndexType", "memory"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps17SignedIntegerType", "init"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps10Strideable", "memory"]
+- !private ["C9tun2socks9TSIPStack", "AF_INET"]
+- ["C9tun2socks9TSIPStack", "DISPATCH_QUEUE_SERIAL"]
+- !private ["C9tun2socks9TSIPStack", "DISPATCH_SOURCE_TYPE_TIMER"]
+- !private ["C9tun2socks9TSIPStack", "DISPATCH_TIME_NOW"]
+- !private ["C9tun2socks9TSIPStack", "ERR_OK"]
+- !private ["C9tun2socks9TSIPStack", "Int"]
+- ["C9tun2socks9TSIPStack", "NSData"]
+- !private ["C9tun2socks9TSIPStack", "NSEC_PER_SEC"]
+- !private ["C9tun2socks9TSIPStack", "NSMutableData"]
+- ["C9tun2socks9TSIPStack", "NSNumber"]
+- !private ["C9tun2socks9TSIPStack", "PBUF_RAM"]
+- !private ["C9tun2socks9TSIPStack", "PBUF_RAW"]
+- !private ["C9tun2socks9TSIPStack", "TCP_DEFAULT_LISTEN_BACKLOG"]
+- ["C9tun2socks9TSIPStack", "TSIPStack"]
+- ["C9tun2socks9TSIPStack", "TSIPStackDelegate"]
+- !private ["C9tun2socks9TSIPStack", "TSTCPSocket"]
+- !private ["C9tun2socks9TSIPStack", "UInt16"]
+- !private ["C9tun2socks9TSIPStack", "UInt8"]
+- ["C9tun2socks9TSIPStack", "UnsafeMutablePointer"]
+- !private ["C9tun2socks9TSIPStack", "checkTimeout"]
+- ["C9tun2socks9TSIPStack", "deinit"]
+- ["C9tun2socks9TSIPStack", "delegate"]
+- ["C9tun2socks9TSIPStack", "didAcceptTCPSocket"]
+- !private ["C9tun2socks9TSIPStack", "dispatch_async"]
+- ["C9tun2socks9TSIPStack", "dispatch_call"]
+- ["C9tun2socks9TSIPStack", "dispatch_queue_create"]
+- !private ["C9tun2socks9TSIPStack", "dispatch_resume"]
+- !private ["C9tun2socks9TSIPStack", "dispatch_source_create"]
+- !private ["C9tun2socks9TSIPStack", "dispatch_source_set_event_handler"]
+- !private ["C9tun2socks9TSIPStack", "dispatch_source_set_timer"]
+- ["C9tun2socks9TSIPStack", "dispatch_source_t"]
+- !private ["C9tun2socks9TSIPStack", "dispatch_suspend"]
+- ["C9tun2socks9TSIPStack", "err_t"]
+- ["C9tun2socks9TSIPStack", "init"]
+- ["C9tun2socks9TSIPStack", "interface"]
+- !private ["C9tun2socks9TSIPStack", "ip_addr_any"]
+- ["C9tun2socks9TSIPStack", "listenPCB"]
+- !private ["C9tun2socks9TSIPStack", "lwip_init"]
+- ["C9tun2socks9TSIPStack", "netif"]
+- !private ["C9tun2socks9TSIPStack", "netif_list"]
+- ["C9tun2socks9TSIPStack", "outputBlock"]
+- !private ["C9tun2socks9TSIPStack", "outputPCB"]
+- ["C9tun2socks9TSIPStack", "pbuf"]
+- !private ["C9tun2socks9TSIPStack", "pbuf_alloc"]
+- !private ["C9tun2socks9TSIPStack", "pbuf_copy_partial"]
+- ["C9tun2socks9TSIPStack", "processQueue"]
+- ["C9tun2socks9TSIPStack", "receivedPacket"]
+- ["C9tun2socks9TSIPStack", "resumeTimer"]
+- ["C9tun2socks9TSIPStack", "stack"]
+- ["C9tun2socks9TSIPStack", "suspendTimer"]
+- !private ["C9tun2socks9TSIPStack", "sys_check_timeouts"]
+- !private ["C9tun2socks9TSIPStack", "sys_restart_timeouts"]
+- !private ["C9tun2socks9TSIPStack", "tcpAcceptFn"]
+- !private ["C9tun2socks9TSIPStack", "tcp_accept"]
+- !private ["C9tun2socks9TSIPStack", "tcp_accepted_c"]
+- !private ["C9tun2socks9TSIPStack", "tcp_bind"]
+- !private ["C9tun2socks9TSIPStack", "tcp_listen_with_backlog"]
+- !private ["C9tun2socks9TSIPStack", "tcp_new"]
+- ["C9tun2socks9TSIPStack", "tcp_pcb"]
+- ["C9tun2socks9TSIPStack", "timer"]
+- ["C9tun2socks9TSIPStack", "writePBuf"]
+- ["P9tun2socks17TSIPStackDelegate", "TSTCPSocket"]
+- ["P9tun2socks17TSIPStackDelegate", "didAcceptTCPSocket"]
+- !private ["C9tun2socks11TSTCPSocket", "init"]
+- !private ["Vs6UInt16", "init"]
+- !private ["Vs5UInt8", "init"]
+- !private ["Sp", "memory"]
+- ["SP", "deinit"]
+- !private ["Ps19UnsignedIntegerType", "init"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps14_Incrementable", "memory"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
+- !private ["Ps12_IntegerType", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_PointerType", "memory"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "memory"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "memory"]
+- !private ["Ps18_SignedIntegerType", "init"]
+- !private ["Ps18_StringElementType", "init"]
+- !private ["VSC5netif", "input"]
+- !private ["VSC5netif", "output"]
+- !private ["VSC4pbuf", "payload"]
+- !private ["VSC4pbuf", "tot_len"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Si"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "PSo16NSMutableCopying"
+- !private "CSo13NSMutableData"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps21NilLiteralConvertible"
+- !private "Sq"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- "C9tun2socks9TSIPStack"
+- "P9tun2socks17TSIPStackDelegate"
+- !private "C9tun2socks11TSTCPSocket"
+- !private "Vs6UInt16"
+- !private "Vs5UInt8"
+- !private "Sp"
+- "SP"
+- !private "Ps19UnsignedIntegerType"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_PointerType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+- !private "Ps18_StringElementType"
+- !private "VSC5netif"
+- !private "VSC4pbuf"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/travis/build/zhuhaow/tun2socks/tun2socks/tun2socks/lwip/module.modulemap"
+- "/Users/travis/build/zhuhaow/tun2socks/tun2socks/tun2socks/tun2socks.h"
+- "/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/tun2socks.build/Release/Mac Framework.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+interface-hash: "c08ef914ab1ceb38cb534a17b8edb89d"

@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/Release/tun2socks.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "tun2socks-Swift.h",
+          'external-contents': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/Release/tun2socks.framework/Versions/A/Headers/tun2socks-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "tun2socks.h",
+          'external-contents': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/tun2socks/tun2socks.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/Release/tun2socks.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/tun2socks.build/Release/Mac Framework.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

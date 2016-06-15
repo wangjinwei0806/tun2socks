@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/Release/tun2socks.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/travis/build/zhuhaow/tun2socks/tun2socks/build/tun2socks.build/Release/Mac Framework.build/unextended-module.modulemap',
+    }]
+  }]
+}
