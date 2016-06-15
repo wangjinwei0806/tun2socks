@@ -14,7 +14,7 @@
     <a title="TSIPStack Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">tun2socks Docs</a> (44% documented)</p>
+        <p><a href="../index.html">tun2socks Docs</a> (64% documented)</p>
         <p class="header-right"><a href="https://github.com/zhuhaow/tun2socks"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -64,6 +64,11 @@
               </div>
             <p>This is the IP stack that receives and outputs IP packets.</p>
 
+<p><code>outputBlock</code> and <code>delegate</code> should be set before any input.
+Then call <code>receivedPacket()</code> when a new IP packet is read from the TUN interface.</p>
+
+<p>There is a timer running internally. When the device is going to sleep (which means the timer will not fire for some time), then the timer must be paused by calling <code>suspendTimer()</code> and resumed by <code>resumeTimer</code> when the deivce wakes up.</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -81,14 +86,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The singleton stack instance that developer should use. The <code>init()</code> method is a private method, which means there will never be more than one IP stack running at the same time.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSIPStack</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">stack</span> <span class="o">=</span> <span class="kt">TSIPStack</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -108,14 +113,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>When the IP stack decides to output some IP packets, this block is called.
+- note: This should be set before any input.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSIPStack</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">outputBlock</span><span class="p">:</span> <span class="p">(([</span><span class="kt">NSData</span><span class="p">],</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">())</span><span class="o">!</span></code></pre>
 
                         </div>
                       </div>
@@ -135,14 +141,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The delegate instance.
+- note: Setting this variable is not protected in the GCD queue, So this shoule be set before any input and shoule never change afterwards.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSIPStack</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TSIPStackDelegate.html">TSIPStackDelegate</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -222,16 +229,36 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Input an IP packet.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TSIPStack</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receivedPacket</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">NSData</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the data containing the whole IP packet.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
