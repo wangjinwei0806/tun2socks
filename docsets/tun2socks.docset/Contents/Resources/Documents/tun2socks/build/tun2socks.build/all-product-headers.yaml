@@ -14,7 +14,7 @@
         {
           'type': 'file',
           'name': "tun2socks.h",
-          'external-contents': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/tun2socks/tun2socks.h"
+          'external-contents': "/Users/travis/build/zhuhaow/tun2socks/tun2socks/tun2socks-osx/tun2socks.h"
         }
       ]
     },

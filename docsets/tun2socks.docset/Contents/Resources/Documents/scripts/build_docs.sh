@@ -1,7 +1,7 @@
 #!/bin/sh
 
 git submodule init
-git submodule update
+git submodule update --remote --merge
 jazzy --swift-version 2.2 \
       -o ./ \
       --source-directory tun2socks/ \

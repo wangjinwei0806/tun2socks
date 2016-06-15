@@ -13,7 +13,7 @@
     <a title="tun2socks  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">tun2socks Docs</a> (36% documented)</p>
+        <p><a href="index.html">tun2socks Docs</a> (44% documented)</p>
         <p class="header-right"><a href="https://github.com/zhuhaow/tun2socks"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -59,25 +59,23 @@
 
 <p><img src="https://travis-ci.org/zhuhaow/tun2socks.svg?branch=master" alt=""></p>
 
-<p>tun2socks is designed to work with the NetworkExtension framework available since
-iOS 9 and OS X 10.11. It is based on the latest stable lwip with minimal
-modification.</p>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<p>tun2socks is designed to work with the NetworkExtension framework. It is based on the latest stable lwip with minimal modification.</p>
+<a href='#feature' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='feature'>Feature</h2>
 
-<p>Just read the comments in the Swift wrapper in <code>tun2socks/wrapper</code>.</p>
+<p>The whole stack is based on GCD which is efficient and fast.</p>
 
-<p>You may be more interested in using <a href="https://github.com/zhuhaow/NEKit">NEKit</a>
-which wraps around tun2socks.</p>
-
-<p>Only TCP is supported.</p>
+<p>Only TCP protocol is supported.</p>
 
 <p>All other protocols (UDP, ICMP, IGMP, &hellip;) will not be supported since they are stateless or can not be supported in NetworkExtension.</p>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+
+<p>Full documented API can be found <a href="https://zhuhaow.github.io/tun2socks/">here</a>.</p>
+
+<p>You may be more interested in using <a href="https://github.com/zhuhaow/NEKit">NEKit</a> which wraps around tun2socks.</p>
 <a href='#ipv6-support' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='ipv6-support'>IPv6 support</h2>
 
 <p>As of now, IPv6 is not supported since lwip 1.4 does not support dual stack.
 IPv6 will be supported in the next major version of lwip.</p>
-
-<p> </p>
 
           </section>
         </section>
