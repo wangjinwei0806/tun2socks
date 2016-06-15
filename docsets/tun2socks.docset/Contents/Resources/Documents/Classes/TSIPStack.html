@@ -67,7 +67,8 @@
 <p><code>outputBlock</code> and <code>delegate</code> should be set before any input.
 Then call <code>receivedPacket()</code> when a new IP packet is read from the TUN interface.</p>
 
-<p>There is a timer running internally. When the device is going to sleep (which means the timer will not fire for some time), then the timer must be paused by calling <code>suspendTimer()</code> and resumed by <code>resumeTimer</code> when the deivce wakes up.</p>
+<p>There is a timer running internally. When the device is going to sleep (which means the timer will not fire for some time), then the timer must be paused by calling <code>suspendTimer()</code> and resumed by <code>resumeTimer</code> when the deivce wakes up.
+- note: This class is thread-safe.</p>
 
           </section>
           <section class="section task-group-section">
@@ -142,7 +143,7 @@ Then call <code>receivedPacket()</code> when a new IP packet is read from the TU
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The delegate instance.
-- note: Setting this variable is not protected in the GCD queue, So this shoule be set before any input and shoule never change afterwards.</p>
+- note: Setting this variable is not protected in the GCD queue, so this shoule be set before any input and shoule never change afterwards.</p>
 
                       </div>
                       <div class="declaration">
