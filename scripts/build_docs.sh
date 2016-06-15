@@ -1,5 +1,7 @@
 #!/bin/sh
 
+gem install jazzy
+
 git submodule init
 git submodule update --remote --merge
 jazzy --swift-version 2.2 \
