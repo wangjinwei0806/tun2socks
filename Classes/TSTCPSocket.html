@@ -66,7 +66,7 @@
 
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
-    Unless one of <code>socketDidReset</code>, <code>socketDidAbort</code> or <code>socketDidClose</code> delegation methods is called, please do <code>close()</code>the socket actively and wait for <code>socketDidClose</code> before releasing it.
+    Unless one of <code>socketDidReset(_:)</code>, <code>socketDidAbort(_:)</code> or <code>socketDidClose(_:)</code> delegation methods is called, please do <code>close()</code>the socket actively and wait for <code>socketDidClose(_:)</code> before releasing it.
 
 </div>
 
@@ -232,7 +232,7 @@
 
 <div class="aside aside-warning">
     <p class="aside-title">Warning</p>
-    This should be set immediately when developer gets an instance of TSTCPSocket from <code>didAcceptTCPSocket(sock: TSTCPSocket)</code> on the same thread that calls it. Simply say, just set it when you get an instance of TSTCPSocket and never change it.
+    This should be set immediately when developer gets an instance of TSTCPSocket from <code>didAcceptTCPSocket(_:)</code> on the same thread that calls it. Simply say, just set it when you get an instance of TSTCPSocket.
 
 </div>
 
