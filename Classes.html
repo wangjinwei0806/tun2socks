@@ -113,7 +113,11 @@ Then call <code>receivedPacket(_:)</code> when a new IP packet is read from the 
 
 <p>There is a timer running internally. When the device is going to sleep (which means the timer will not fire for some time), then the timer must be paused by calling <code>suspendTimer()</code> and resumed by <code>resumeTimer()</code> when the deivce wakes up.</p>
 
-<p>This class is thread-safe.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This class is thread-safe.
+
+</div>
 
                         <a href="Classes/TSIPStack.html" class="slightly-smaller">See more</a>
                       </div>

@@ -69,7 +69,11 @@ Then call <code>receivedPacket(_:)</code> when a new IP packet is read from the 
 
 <p>There is a timer running internally. When the device is going to sleep (which means the timer will not fire for some time), then the timer must be paused by calling <code>suspendTimer()</code> and resumed by <code>resumeTimer()</code> when the deivce wakes up.</p>
 
-<p>This class is thread-safe.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This class is thread-safe.
+
+</div>
 
           </section>
           <section class="section task-group-section">
@@ -115,8 +119,13 @@ Then call <code>receivedPacket(_:)</code> when a new IP packet is read from the 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>When the IP stack decides to output some IP packets, this block is called.
-- Warning: This should be set before any input.</p>
+                        <p>When the IP stack decides to output some IP packets, this block is called.</p>
+
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This should be set before any input.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -143,8 +152,13 @@ Then call <code>receivedPacket(_:)</code> when a new IP packet is read from the 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The delegate instance.
-- Warning: Setting this variable is not protected in the GCD queue, so this shoule be set before any input and shoule never change afterwards.</p>
+                        <p>The delegate instance.</p>
+
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Setting this variable is not protected in the GCD queue, so this shoule be set before any input and shoule never change afterwards.
+
+</div>
 
                       </div>
                       <div class="declaration">
