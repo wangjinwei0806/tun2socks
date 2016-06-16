@@ -70,6 +70,18 @@
 <p>All other protocols (UDP, ICMP, IGMP, &hellip;) will not be supported since they are stateless or can not be supported in NetworkExtension.</p>
 <a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
 
+<p>The overall structure of tun2socks:</p>
+<pre class="highlight plaintext"><code>╔═══════════════════════╗                                                       
+║sourceAddress: X.X.X.X ║                                                       
+║    sourcePort: XX     ║                    writeData(_:)                      
+╚═══════════════════════╝                          │                            
+                                                   │            ┌──────────────┐
+┌─────────────┐  ┌───────┐  ┌────────────┐  ┌──────▼──────┐     │TSTCPSocketDel│
+│    Local    ◀──▶  TUN  ◀──▶ TSIPStack  ◀──▶ TSTCPSocket ├─────▶egate.didReadD│
+└─────────────┘  └───────┘  └────────────┘  └─────────────┘     │    ata()     │
+                                                                └──────────────┘
+</code></pre>
+
 <p>Fully documented API reference can be found <a href="https://zhuhaow.github.io/tun2socks/">here</a>.</p>
 
 <p>I recommend using <a href="https://github.com/Carthage/Carthage">Carthage</a> to integrate tun2socks in your project by adding</p>
