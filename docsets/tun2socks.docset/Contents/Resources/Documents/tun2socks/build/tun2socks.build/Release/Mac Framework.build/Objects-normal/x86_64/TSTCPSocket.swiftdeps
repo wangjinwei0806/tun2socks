@@ -5,70 +5,67 @@ provides-top-level:
 - "tcp_sent_func"
 - "tcp_err_func"
 - "SocketDict"
-- "SocketIdentity"
-- "=="
 - "TSTCPSocket"
 provides-nominal:
 - "P9tun2socks19TSTCPSocketDelegate"
 - "V9tun2socks10SocketDict"
-- "V9tun2socks14SocketIdentity"
 - "C9tun2socks11TSTCPSocket"
 provides-member:
 - ["P9tun2socks19TSTCPSocketDelegate", ""]
 - ["V9tun2socks10SocketDict", ""]
-- ["V9tun2socks14SocketIdentity", ""]
 - ["C9tun2socks11TSTCPSocket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "tcp_recv_func"
-- "UnsafeMutablePointer"
-- !private "tcp_write"
-- !private "tcp_abort"
-- !private "tcp_recv"
-- !private "dispatch_async"
-- "dispatch_queue_t"
-- "pbuf"
-- "tcp_pcb"
-- !private "ERR_RST"
-- !private "tcp_sent"
-- !private "pbuf_free"
-- "Void"
-- !private "Int32"
-- "err_t"
-- !private "NSMutableData"
-- !private "BooleanLiteralType"
-- !private "TCP_WRITE_FLAG_COPY"
-- !private "tcp_recved"
-- !private "<"
-- "Hashable"
-- !private "ERR_ABRT"
-- !private "CLOSED"
-- "tcp_err_func"
-- "TSTCPSocketDelegate"
-- !private "ERR_OK"
-- !private "tcp_arg"
-- "in_addr"
-- !private "tcp_close"
 - !private "!="
-- "=="
-- !private "~="
-- "Bool"
-- "Int"
-- !private "ESTABLISHED"
-- !private ">="
-- !private "dispatch_sync"
+- !private "StringLiteralType"
+- "UnsafeMutablePointer"
 - !private "tcp_err"
+- "tcp_recv_func"
+- !private "TCP_WRITE_FLAG_COPY"
+- "Int"
 - "TSTCPSocket"
 - "UInt16"
-- "Dictionary"
-- "SocketIdentity"
-- "NSData"
-- "tcp_sent_func"
-- !private "&&"
-- !private "pbuf_copy_partial"
-- "SocketDict"
+- "Void"
 - !private "UInt8"
-- !private "withUnsafeMutablePointer"
+- "pbuf"
+- "tcp_pcb"
+- !private "tcp_abort"
+- !private "tcp_sent"
+- "err_t"
+- !private "FloatLiteralType"
+- "NSData"
+- !private "<"
+- !private "ERR_ABRT"
+- "BooleanLiteralType"
+- !private "CLOSED"
+- !private "tcp_recv"
+- !private "tcp_recved"
+- !private "ESTABLISHED"
+- "in_addr"
+- "TSTCPSocketDelegate"
+- "tcp_sent_func"
+- "tcp_err_func"
+- !private "Int32"
+- "Dictionary"
+- !private "&&"
+- !private "tcp_arg"
+- "SocketDict"
+- !private "ERR_RST"
+- !private "tcp_close"
+- !private ">="
+- !private "pbuf_free"
+- !private "IntegerLiteralType"
+- !private "=="
+- !private "~="
+- !private "dispatch_sync"
+- !private "tcp_write"
+- "Bool"
+- !private "NSMutableData"
+- !private "dispatch_async"
+- "dispatch_queue_t"
+- !private "assert"
+- !private "ERR_OK"
+- !private "pbuf_copy_partial"
 depends-member:
 - !private ["Ps9AnyObject", "CLOSED"]
 - !private ["Ps9AnyObject", "ERR_ABRT"]
@@ -79,7 +76,6 @@ depends-member:
 - !private ["Ps9AnyObject", "Int32"]
 - !private ["Ps9AnyObject", "NSMutableData"]
 - !private ["Ps9AnyObject", "SocketDict"]
-- !private ["Ps9AnyObject", "SocketIdentity"]
 - !private ["Ps9AnyObject", "TCP_WRITE_FLAG_COPY"]
 - !private ["Ps9AnyObject", "UInt16"]
 - !private ["Ps9AnyObject", "UInt8"]
@@ -93,6 +89,7 @@ depends-member:
 - !private ["Ps9AnyObject", "err_t"]
 - !private ["Ps9AnyObject", "errored"]
 - !private ["Ps9AnyObject", "identity"]
+- !private ["Ps9AnyObject", "identityArg"]
 - !private ["Ps9AnyObject", "in_addr"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isValid"]
@@ -117,10 +114,11 @@ depends-member:
 - !private ["Ps9AnyObject", "tcp_sent"]
 - !private ["Ps9AnyObject", "tcp_sent_func"]
 - !private ["Ps9AnyObject", "tcp_write"]
-- !private ["Ps9AnyObject", "withUnsafeMutablePointer"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps22BidirectionalIndexType", "Stride"]
+- !private ["Ps22BidirectionalIndexType", "alloc"]
+- !private ["Ps22BidirectionalIndexType", "dealloc"]
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps22BidirectionalIndexType", "init"]
 - !private ["Ps22BidirectionalIndexType", "memory"]
@@ -131,7 +129,9 @@ depends-member:
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "Stride"]
+- !private ["Ps11CVarArgType", "alloc"]
 - !private ["Ps11CVarArgType", "bytes"]
+- !private ["Ps11CVarArgType", "dealloc"]
 - !private ["Ps11CVarArgType", "hashValue"]
 - !private ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "length"]
@@ -147,6 +147,8 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "alloc"]
+- !private ["Ps10Comparable", "dealloc"]
 - !private ["Ps10Comparable", "hashValue"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "memory"]
@@ -154,7 +156,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "alloc"]
 - !private ["Ps28CustomDebugStringConvertible", "bytes"]
+- !private ["Ps28CustomDebugStringConvertible", "dealloc"]
 - !private ["Ps28CustomDebugStringConvertible", "hashValue"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "length"]
@@ -183,17 +187,19 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "alloc"]
 - !private ["Ps9Equatable", "bytes"]
-- ["Ps9Equatable", "hashValue"]
-- !private ["Ps9Equatable", "id"]
+- !private ["Ps9Equatable", "dealloc"]
+- !private ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "length"]
 - !private ["Ps9Equatable", "memory"]
 - !private ["Ps9Equatable", "mutableBytes"]
 - !private ["Ps9Equatable", "rawValue"]
-- ["Ps9Equatable", ""]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps16ForwardIndexType", "Stride"]
+- !private ["Ps16ForwardIndexType", "alloc"]
+- !private ["Ps16ForwardIndexType", "dealloc"]
 - !private ["Ps16ForwardIndexType", "hashValue"]
 - !private ["Ps16ForwardIndexType", "init"]
 - !private ["Ps16ForwardIndexType", "memory"]
@@ -201,14 +207,14 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "alloc"]
 - !private ["Ps8Hashable", "bytes"]
-- ["Ps8Hashable", "hashValue"]
-- !private ["Ps8Hashable", "id"]
+- !private ["Ps8Hashable", "dealloc"]
+- !private ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "length"]
 - !private ["Ps8Hashable", "memory"]
 - !private ["Ps8Hashable", "mutableBytes"]
-- ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - ["Ps9Indexable", "Key"]
@@ -263,6 +269,8 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "mutableBytes"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps21NilLiteralConvertible", "Stride"]
+- !private ["Ps21NilLiteralConvertible", "alloc"]
+- !private ["Ps21NilLiteralConvertible", "dealloc"]
 - !private ["Ps21NilLiteralConvertible", "hashValue"]
 - !private ["Ps21NilLiteralConvertible", "init"]
 - !private ["Ps21NilLiteralConvertible", "memory"]
@@ -270,6 +278,8 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "Stride"]
+- !private ["Ps21RandomAccessIndexType", "alloc"]
+- !private ["Ps21RandomAccessIndexType", "dealloc"]
 - !private ["Ps21RandomAccessIndexType", "hashValue"]
 - !private ["Ps21RandomAccessIndexType", "init"]
 - !private ["Ps21RandomAccessIndexType", "memory"]
@@ -291,18 +301,16 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
-- ["V9tun2socks10SocketDict", "SocketIdentity"]
+- ["V9tun2socks10SocketDict", "Int"]
 - ["V9tun2socks10SocketDict", "TSTCPSocket"]
 - ["V9tun2socks10SocketDict", "init"]
 - ["V9tun2socks10SocketDict", "lookup"]
 - ["V9tun2socks10SocketDict", "socketDict"]
-- ["V9tun2socks14SocketIdentity", "Int"]
-- ["V9tun2socks14SocketIdentity", "deinit"]
-- ["V9tun2socks14SocketIdentity", "hashValue"]
-- ["V9tun2socks14SocketIdentity", "id"]
-- ["V9tun2socks14SocketIdentity", "init"]
+- !private ["Vs12StaticString", "deinit"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "alloc"]
+- !private ["Ps10Strideable", "dealloc"]
 - !private ["Ps10Strideable", "hashValue"]
 - !private ["Ps10Strideable", "init"]
 - !private ["Ps10Strideable", "memory"]
@@ -317,14 +325,13 @@ depends-member:
 - ["C9tun2socks11TSTCPSocket", "NSData"]
 - !private ["C9tun2socks11TSTCPSocket", "NSMutableData"]
 - !private ["C9tun2socks11TSTCPSocket", "SocketDict"]
-- ["C9tun2socks11TSTCPSocket", "SocketIdentity"]
 - !private ["C9tun2socks11TSTCPSocket", "TCP_WRITE_FLAG_COPY"]
 - ["C9tun2socks11TSTCPSocket", "TSTCPSocketDelegate"]
 - ["C9tun2socks11TSTCPSocket", "UInt16"]
 - !private ["C9tun2socks11TSTCPSocket", "UInt8"]
 - ["C9tun2socks11TSTCPSocket", "UnsafeMutablePointer"]
-- !private ["C9tun2socks11TSTCPSocket", "Void"]
 - ["C9tun2socks11TSTCPSocket", "close"]
+- !private ["C9tun2socks11TSTCPSocket", "closedSignalSend"]
 - ["C9tun2socks11TSTCPSocket", "deinit"]
 - ["C9tun2socks11TSTCPSocket", "delegate"]
 - ["C9tun2socks11TSTCPSocket", "destinationAddress"]
@@ -335,6 +342,7 @@ depends-member:
 - ["C9tun2socks11TSTCPSocket", "err_t"]
 - ["C9tun2socks11TSTCPSocket", "errored"]
 - !private ["C9tun2socks11TSTCPSocket", "identity"]
+- !private ["C9tun2socks11TSTCPSocket", "identityArg"]
 - ["C9tun2socks11TSTCPSocket", "in_addr"]
 - ["C9tun2socks11TSTCPSocket", "init"]
 - ["C9tun2socks11TSTCPSocket", "isConnected"]
@@ -343,7 +351,7 @@ depends-member:
 - !private ["C9tun2socks11TSTCPSocket", "pbuf_copy_partial"]
 - !private ["C9tun2socks11TSTCPSocket", "pbuf_free"]
 - !private ["C9tun2socks11TSTCPSocket", "pcb"]
-- ["C9tun2socks11TSTCPSocket", "queue"]
+- !private ["C9tun2socks11TSTCPSocket", "queue"]
 - ["C9tun2socks11TSTCPSocket", "recved"]
 - ["C9tun2socks11TSTCPSocket", "release"]
 - ["C9tun2socks11TSTCPSocket", "sent"]
@@ -360,7 +368,6 @@ depends-member:
 - !private ["C9tun2socks11TSTCPSocket", "tcp_sent"]
 - !private ["C9tun2socks11TSTCPSocket", "tcp_sent_func"]
 - !private ["C9tun2socks11TSTCPSocket", "tcp_write"]
-- !private ["C9tun2socks11TSTCPSocket", "withUnsafeMutablePointer"]
 - ["C9tun2socks11TSTCPSocket", "writeData"]
 - ["P9tun2socks19TSTCPSocketDelegate", "Int"]
 - ["P9tun2socks19TSTCPSocketDelegate", "NSData"]
@@ -374,6 +381,8 @@ depends-member:
 - !private ["Vs6UInt16", "init"]
 - !private ["Vs5UInt8", "init"]
 - !private ["Sp", "Stride"]
+- !private ["Sp", "alloc"]
+- !private ["Sp", "dealloc"]
 - !private ["Sp", "deinit"]
 - !private ["Sp", "hashValue"]
 - !private ["Sp", "init"]
@@ -385,6 +394,8 @@ depends-member:
 - !private ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "alloc"]
+- !private ["Ps14_Incrementable", "dealloc"]
 - !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps14_Incrementable", "init"]
 - !private ["Ps14_Incrementable", "memory"]
@@ -400,11 +411,15 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "removeValueForKey"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps12_PointerType", "Stride"]
+- !private ["Ps12_PointerType", "alloc"]
+- !private ["Ps12_PointerType", "dealloc"]
 - !private ["Ps12_PointerType", "hashValue"]
 - !private ["Ps12_PointerType", "init"]
 - !private ["Ps12_PointerType", "memory"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps22_RandomAccessAmbiguity", "Stride"]
+- !private ["Ps22_RandomAccessAmbiguity", "alloc"]
+- !private ["Ps22_RandomAccessAmbiguity", "dealloc"]
 - !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
 - !private ["Ps22_RandomAccessAmbiguity", "init"]
 - !private ["Ps22_RandomAccessAmbiguity", "memory"]
@@ -414,6 +429,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "Stride"]
 - ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "alloc"]
+- !private ["Ps12_Reflectable", "dealloc"]
 - !private ["Ps12_Reflectable", "hashValue"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "memory"]
@@ -445,10 +462,10 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "Vs10Dictionary"
 - "Ps28DictionaryLiteralConvertible"
-- "Ps9Equatable"
+- !private "Ps9Equatable"
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
-- "Ps8Hashable"
+- !private "Ps8Hashable"
 - "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
@@ -475,7 +492,7 @@ depends-nominal:
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
 - "V9tun2socks10SocketDict"
-- "V9tun2socks14SocketIdentity"
+- !private "Vs12StaticString"
 - !private "Ps10Strideable"
 - "C9tun2socks11TSTCPSocket"
 - "P9tun2socks19TSTCPSocketDelegate"
@@ -515,4 +532,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-interface-hash: "afab89bbd5bf6c3cdbd46333891f7004"
+interface-hash: "ab033d4a3d40dbc5a30b161cace95364"
